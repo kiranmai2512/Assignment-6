@@ -1,0 +1,327 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F0F4F8; /* Soft Pastel Blue */
+}
+header {
+    background: #333;
+    color: #fff;
+    width: 170px; /* Fixed width for the sidebar */
+    position: fixed; /* Fix to the side */
+    height: 100%; /* Full height */
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Vertical alignment */
+    align-items: flex-start; /* Align items to the start */
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 10px 0; /* Space between items */
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px; /* Padding for clickable area */
+    display: block; /* Make the link fill the entire space */
+}
+
+.nav-menu a:hover {
+    background: #555; /* Background color on hover */
+}
+
+/* Main content styling */
+main {
+    margin-left: 220px; /* Leave space for the sidebar */
+    padding: 20px; /* Add padding for the main content */
+}
+
+.intro {
+    margin-bottom: 20px; /* Space below the intro section */
+}
+
+.posts {
+    display: flex;
+    flex-direction: column; /* Vertical layout of posts */
+}
+
+.post {
+    margin-bottom: 20px; /* Space between posts */
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        position: static; /* Revert to static positioning */
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Adjust height */
+    }
+
+    main {
+        margin-left: 0; /* No margin for the main content */
+    }
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 50px 20px;
+    background-color: #FFFFFF; /* White */
+    color: #00796B; /* Teal */
+    background-image: url('https://img.freepik.com/premium-vector/abstract-white-background-with-grey-hitech-polygonal-business-corporate-concept_249611-8886.jpg?w=360'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00796B; /* Teal */
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #00796B; /* Teal */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #FFFFFF; /* White */
+    background-color: #004D40; /* Dark Teal */
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Added transition */
+}
+
+.cta-buttons {
+    margin-top: 2em;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    padding: 0.75em 2em;
+    margin: 0.5em;
+    font-size: 1em;
+    color: #FFFFFF; /* White */
+    background-color: #004D40; /* Dark Teal */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Added transition */
+}
+
+.cta-buttons .btn:hover {
+    background-color: #00332B; /* Even Darker Teal */
+}
+
+.buttons .btn-secondary {
+    background-color: #FFAB91; /* Coral */
+}
+
+.buttons .btn:hover, .buttons .btn-secondary:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #004D40; /* Dark Teal */
+    color: #FFFFFF; /* White */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Form Section Styles */
+.form-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+fieldset {
+    border: 1px solid #B2DFDB; /* Light Teal */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    color: #00796B; /* Teal */
+}
+
+fieldset:last-of-type label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left; /* Align labels to the left */
+}
+
+input, textarea, select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #B2DFDB; /* Light Teal */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease; /* Added transition */
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF; /* White */
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Added transition */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.btn {
+    background-color: #004D40; /* Dark Teal */
+}
+
+.btn-secondary {
+    background-color: #FFAB91; /* Coral */
+}
+
+/* Validation Error Styles */
+input:invalid {
+    border: 2px solid #E57373; /* Light Red */
+}
+
+input:valid {
+    border: 2px solid #81C784; /* Light Green */
+}
+
+input:focus:invalid {
+    outline: none;
+    border-color: #E57373; /* Light Red */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons .btn {
+        margin: 5px 0;
+    }
+
+    .form-section {
+        padding: 10px;
+    }
+}
+
+/* Posts Grid Styles */
+.posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.post {
+    background-color: #FFFFFF; /* White */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post h2 {
+    font-size: 1.5em;
+    color: #00796B; /* Teal */
+    padding: 10px;
+}
+
+.post p {
+    padding: 0 10px 10px;
+}
+
+/* Hover Effect */
+.post:hover {
+    transform: translateY(-5px); /* Slightly lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
